@@ -19,4 +19,84 @@ body {
   font-size: 1rem;
   line-height: 1.6;
   color: $white;
+  min-height: 100vh;
+  padding: 3rem 5rem 1.5rem;
+  background-color: $violet;
+  background-image: url("../images/bg-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  justify-content: space-between;
+  column-gap: 3rem;
+  grid-template-columns: 1.3fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas:
+    "header ."
+    "hero-img main"
+    ". footer";
+}
+
+header {
+  grid-area: header;
+  margin-bottom: 2rem;
+
+  img {
+    width: 30%;
+  }
+}
+
+.hero-img {
+  width: 100%;
+  grid-area: hero-img;
+  align-self: center;
+}
+
+main {
+  grid-area: main;
+  align-self: center;
+  margin-top: -6rem;
+
+  h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2.6rem;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    margin-bottom: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    background-color: $white;
+    color: $violet;
+    padding: 0.7rem 4rem;
+    border-radius: 100px;
+    box-shadow: 0 0.6rem 2rem hsla(0, 0%, 0%, 0.2);
+  }
+}
+
+footer {
+  grid-area: footer;
+  justify-self: end;
+  display: flex;
+  gap: 1rem;
+
+  a {
+    color: $white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: inline-block;
+    border: 1px solid $white;
+    width: 2.5rem;
+    height: 2.5rem;
+    display: grid;
+    place-content: center;
+    border-radius: 50%;
+  }
 }
