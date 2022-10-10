@@ -11,7 +11,6 @@ This is a solution to the [Huddle landing page with single introductory section 
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
 
@@ -30,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [See the code on GitHub]()
-- Live Site URL: [View live site]()
+- Solution URL: [See the code on GitHub](https://github.com/KristinaRadosavljevic/huddle-landing-page-with-single-introductory-section)
+- Live Site URL: [View live site](https://huddle-landing-page-with-single-introductory-section-six-kohl.vercel.app/)
 
 ## My process
 
@@ -39,12 +38,17 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - CSS/Sass
+- CSS grid
+- Flexbox
+- Media queries
 
 ### What I learned
 
-### Continued development
+This challenge was all about using the CSS grid. The layout needed a bit more tweaking than the previous challenges, so the media queries were also more numerous and complex.
 
 ### Useful resources
+
+As I got to use Font Awesome icons in this project, I gave myself a challenge to learn more about making icons accessible by using [this guide](https://fontawesome.com/docs/web/dig-deeper/accessibility) as a starting point for my research.
 
 ## Author
 
