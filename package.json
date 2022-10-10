@@ -1,0 +1,22 @@
+{
+  "name": "huddle-landing-page-with-single-introductory-section",
+  "version": "1.0.0",
+  "description": "Huddle landing page with a single introductory section",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KristinaRadosavljevic/huddle-landing-page-with-single-introductory-section.git"
+  },
+  "author": "Kristina Radosavljevic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KristinaRadosavljevic/huddle-landing-page-with-single-introductory-section/issues"
+  },
+  "homepage": "https://github.com/KristinaRadosavljevic/huddle-landing-page-with-single-introductory-section#readme",
+  "dependencies": {
+    "node-sass": "^7.0.3"
+  }
+}
