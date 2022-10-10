@@ -3,7 +3,9 @@
 // Color variables
 $violet: hsl(257, 40%, 49%);
 $soft-magenta: hsl(300, 69%, 71%);
+$magenta: hsl(300, 100%, 45%);
 $white: hsl(0, 0%, 100%);
+$paragraph: hsl(259, 78%, 91%);
 
 // Global resets
 *,
@@ -67,6 +69,7 @@ main {
 
   p {
     margin-bottom: 1.5rem;
+    color: $paragraph;
   }
 
   a {
@@ -78,6 +81,12 @@ main {
     padding: 0.7rem 4rem;
     border-radius: 100px;
     box-shadow: 0 0.6rem 2rem hsla(0, 0%, 0%, 0.2);
+    transition: all 0.3s;
+
+    &:hover {
+      background-color: $soft-magenta;
+      color: $white;
+    }
   }
 }
 
@@ -98,5 +107,20 @@ footer {
     display: grid;
     place-content: center;
     border-radius: 50%;
+    transition: all 0.3s;
+
+    &:hover {
+      color: $magenta;
+      border-color: $magenta;
+    }
+  }
+}
+
+// Remove all transitions for people that prefer not to see them
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
   }
 }
