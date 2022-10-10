@@ -57,7 +57,7 @@ header {
 main {
   grid-area: main;
   align-self: center;
-  margin-top: -6rem;
+  margin-bottom: 6rem;
 
   h1 {
     font-family: "Poppins", sans-serif;
@@ -113,6 +113,68 @@ footer {
       color: $magenta;
       border-color: $magenta;
     }
+  }
+}
+
+// Media queries
+@media (max-width: 1260px) {
+  main {
+    margin-bottom: 0;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    background-image: url("../images/bg-mobile.svg");
+    background-position: top;
+    background-size: contain;
+    padding: 2rem;
+    row-gap: 3rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+      "header"
+      "hero-img"
+      "main"
+      "footer";
+  }
+
+  header {
+    margin-bottom: 0;
+
+    img {
+      width: 40%;
+      max-width: 12rem;
+    }
+  }
+
+  .hero-img {
+    max-width: 30rem;
+    justify-self: center;
+  }
+
+  main {
+    text-align: center;
+    justify-self: center;
+    max-width: 35rem;
+
+    a {
+      padding: 0.7rem 5rem;
+    }
+  }
+
+  footer {
+    justify-self: center;
+  }
+}
+
+@media (max-width: 420px) {
+  main h1 {
+    font-size: 1.6rem;
   }
 }
 
